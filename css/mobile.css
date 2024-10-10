@@ -1,0 +1,64 @@
+@media screen and (max-width: 375px) {
+    .titulo h1{
+        font-size: 40px;
+    }
+    header .top {
+        align-items: center;
+        height: 60px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    header .bottom {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    header img {
+        width: 70%;
+    }
+    .bottom menu {
+    flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 0;
+    }
+
+    menu a {
+        border-bottom: black solid 2px;
+        padding: 20px 40px;
+    }
+    .hero {
+        background-position: 20%;
+        height: 500px;
+    }
+    .hero .information {
+        padding: 20px;
+    }
+    .hero .information h1{
+        font-size: 38px;
+    }
+    .empresa .empleados {
+       flex-direction: column;
+        padding: 20px;
+    }
+    .persona{
+        width: 100%;
+    }
+    .servicios{
+        padding: 10px;
+    }
+    .servicios .principal {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .promociones .principal {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .promocion {
+        height: auto;
+    }
+    .instalaciones .principal {
+        flex-direction: column;
+    }
+}

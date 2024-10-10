@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+}
+
+:root {
+    --gris: #313036;
+    --azul: #1d8ef6;
+    --blanquito: #f0f3f8;
+}
+
+header {
+    background-color: var(--gris);
+}
+
+header .back {
+    background-color: white;
+}
+
+header .top {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+
+}
+
+.top .mail {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px
+}
+
+.mail p {
+    margin: 0;
+}
+
+.top .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+header .bottom {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: var(--gris);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../imagenes/foto_slide.jpg') center/cover no-repeat;
+    height: 600px;
+}
+
+.information {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    gap: 150px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.information .texts {
+    max-width: 400px;
+    color: var(--gris);
+}
+
+.texts h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.texts p {
+    max-width: 350px;
+}
+
+.botonera .boton-flecha {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.botonera .azul {
+    border: var(--azul) solid 2px;
+    background-color: var(--azul);
+    color: white;
+}
+
+.botonera .transparente {
+    border: black solid 2px;
+    background-color: transparent;
+}
+
+.titulo {
+    margin: auto;
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 48px;
+    margin: 20px 0 5px 0;
+    color: var(--gris);
+}
+
+.titulo .divisor {
+    height: 2px;
+    width: 100px;
+    margin: auto auto 20px auto;
+    background-color: var(--azul);
+}
+
+.empresa .empleados {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 1200px;
+    margin: auto;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagen {
+    position: relative;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagen .redes {
+    transition: 0.5s all;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    width: 60%;
+    left: calc(50% - 30%);
+    top: calc(100% - 20px);
+    justify-content: space-around;
+    color: white;
+}
+
+.empresa .persona:hover .redes {
+    visibility: visible;
+    opacity: 100;
+}
+
+.redes i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.empleados .persona {
+    flex: 1 0 0;
+    overflow: clip;
+
+    border: #dad8e4 solid 1px;
+    border-radius: 15px;
+}
+
+.persona .informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.persona .informacion .nombre {
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.persona .informacion .rol {
+    margin: 5px 0;
+}
+
+.servicios {
+    padding: 20px 0 60px 0;
+}
+
+.servicios .principal {
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 25px;
+}
+
+.servicios .principal .servicio {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio {
+    text-align: center;
+    transition: 0.5s all;
+    border-radius: 15px;
+    border: #dad8e4 solid 1px;
+    padding: 20px;
+}
+
+.servicio:hover {
+    border: var(--azul) solid 1px;
+    background-color: var(--azul);
+    color: white;
+}
+
+.servicio:hover .circulo {
+    background-color: white;
+    color: var(--azul);
+}
+
+.servicio .circulo {
+    transition: 0.5s all;
+    width: 80px;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 50%;
+    background-color: var(--azul);
+}
+
+.servicio p {
+    text-align: center;
+}
+
+.promociones {
+    background-color: var(--blanquito);
+    padding: 20px 0;
+}
+
+.promociones .principal {
+    display: flex;
+    max-width: 1200px;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promocion {
+    overflow: clip;
+    flex: 1 0 0;
+    transition: 0.5s all;
+    border-radius: 15px;
+    border: #dad8e4 solid 1px;
+    background-color: white;
+    height: 450px;
+}
+
+.promocion .imagen {
+    position: relative;
+    height: 300px;
+}
+
+.promocion .imagen p {
+    position: absolute;
+    background-color: var(--azul);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    border-radius: 8px;
+    top: calc(100% - 20px);
+    left: calc(37%)
+}
+
+.promocion .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promocion .informacion {
+    padding: 20px;
+}
+
+.promocion .informacion h2 {
+    font-size: 22px;
+}
+
+.instalaciones .principal {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.instalaciones .imagen-instalaciones {
+    flex: 1 0 0;
+
+}
+.instalaciones {
+    padding: 20px 0;
+}
+.instalaciones .principal img {
+    transition: 0.5s all;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instalaciones .principal img:hover {
+    scale: 1.10;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    filter: grayscale(100%);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #353535;
+    color: white;
+    padding: 30px 0;
+}
+footer p {
+    margin: 0;
+    font-weight: 600;
+}
